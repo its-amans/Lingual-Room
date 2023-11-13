@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+
+  padding: 0px;
+  min-height: 100vh;
+}
+#navbar{
+    display:flex;
+    position:relative;
+    width:100%;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    position:absolute;
+    opacity:0.4;
+}
+#logo img{
+    height:90px;
+    width:90px;
+    border-radius:9px;
+    margin:10px;
+}
+#list{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+}
+#list li{
+    padding:34px;
+    display:inline-block;
+
+}
+#list li a{
+    text-decoration: none;
+    color:white;
+}
+#list li a:hover{
+    text-decoration: none;
+    color:black;
+}
+#front{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position:relative; 
+    padding:90px; 
+}
+#front::before{
+    content:"";
+    background:url('business-people-6651299.jpg') no-repeat center center/cover;
+    height:820px;
+    width:100%;
+    z-index:-1;
+    left:0;
+    opacity:0.5;
+    position:absolute;
+}
+#front .h-primary{
+    font-size:3.5rem;
+    margin:15px;
+}
+#front p{
+    font-size:2rem;
+    margin:10px;
+}
+#translate {
+  font-size: 2.5rem;
+  border: 4px solid black;
+  background-color: brown;
+  border-radius: 9px;
+  color: white;
+  height: 60px;
+  width: auto;
+  margin: 40px;
+  padding: 4px 15px;
+  text-decoration: none;
+}
+#services{
+    margin-top:150px;
+}
+#service-box{
+    display:flex;
+}
+.head-primary{
+    font-size: 3.5rem;
+    margin:34px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#serve{
+    border:2px solid red;
+    border-radius:10px;
+    width:33.34%;
+    margin:4px 4px;
+}
+#serve h1{
+    font-size: 2.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:34px 120px;
+}
+#service-box img{
+  height: 400px;
+  width:415px;
+  display:block;
+  margin: 65px;
+}
+#serve p{
+   font-size:1rem;
+   margin:5px 5px; 
+}
+#translator{
+  position: relative;
+  margin:0;
+  padding:0;
+}
+#translator::before {
+  content: "";
+  background: url(feedback-3653368.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+.container{
+    margin-top:0px;
+    margin-left: 450px;
+    max-width: 690px;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+  }
+  
+  .wrapper{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .text-input .to-text{
+    border-radius: 0px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .text-input textarea::placeholder{
+    color: #b7b6b6;
+  }
+  
+  .controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .controls{
+    list-style: none;
+    padding: 12px 15px;
+  }
+  
+  .controls .row .icons{
+    width: 38%;
+  }
+  
+  .controls .row .icons i{
+    width: 50px;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+  
+  .controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .controls .row select{
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    padding-left: 5px;
+  }
+  
+  .text-input textarea::-webkit-scrollbar{
+    width: 4px;
+  }
+  
+  .controls .row select::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  .text-input textarea::-webkit-scrollbar-track,
+  .controls .row select::-webkit-scrollbar-track{
+    background: #fff;
+  }
+  
+  .text-input textarea::-webkit-scrollbar-thumb{
+    background: #ddd;
+    border-radius: 8px;
+  }
+  
+  .controls .row select::-webkit-scrollbar-thumb{
+    background: #999;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .controls .exchange{
+    color: #adadad;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls i:active{
+    transform: scale(0.9);
+  }
+  
+  .container button{
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #5372F0;
+  }
+  
+  @media (max-width: 660px){
+    .container{
+      padding: 20px;
+    }
+  
+    .wrapper .text-input{
+      flex-direction: column;
+    }
+  
+    .text-input .to-text{
+      border-left: 0px;
+      border-top: 1px solid #ccc;
+    }
+  
+    .text-input textarea{
+      height: 200px;
+    }
+  
+    .controls .row .icons{
+      display: none;
+    }
+  
+    .container button{
+      padding: 13px;
+      font-size: 16px;
+    }
+  
+    .controls .row select{
+      font-size: 16px;
+    }
+  
+    .controls .exchange{
+      font-size: 14px;
+    }
+  }
+  
+#our-clients {
+    position: relative;
+    margin:0;
+    padding:0;
+}
+#our-clients::before {
+    content: "";
+    background: url(feedback-3653368.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+#clients img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: 34px 34px;
+}
+#contact {
+    display: flex;
+    margin-left:32%;
+    align-items: center;
+    padding-top: 70px;
+}
+#contact label{
+font-size:2.0rem;
+display:block;
+}
+#contact input{
+font-size:1.5rem;
+font-display: block;
+margin:15px 0px;
+width: 200%;
+}
+#message{
+  height:200px;
+}
+#button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    border: 4px solid black;
+    background-color: brown;
+    border-radius: 9px;
+    color: white;
+    height: 60px;
+    width: auto;
+    margin: 20px;
+    padding: 4px 15px;
+    font-size: 1.5rem;
+}
+#footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
