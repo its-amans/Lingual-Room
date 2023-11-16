@@ -120,6 +120,10 @@ body{
   display:block;
   margin: 65px;
 }
+#service-box img:hover{
+  height: 350px;
+  width:415px;
+}
 #serve p{
    font-size:1rem;
    margin:5px 5px; 

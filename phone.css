@@ -1,0 +1,99 @@
+/* NAVBAR SECTION */
+#navbar{
+    flex-direction:column;
+}
+#ullist{
+    margin:5px;
+}
+#ullist .list {
+    font-size: 1.05rem;
+    padding: 4px;
+    margin: 4px 5px;
+}
+
+/* HOME SECTION */
+#home {
+    padding: 10px 5px;
+    height: 560px;
+}
+#home::before {
+    height: 75%;
+}
+#h-primary {
+    font-size: 1.5rem;
+}
+#home p {
+    font-size: 1rem;
+    padding: 5px;
+}
+.btn {
+    padding: 17px 8px;
+    font-size: 1rem;
+    border-radius: 12px;
+    margin: 23px 2px;
+}
+/* SERVICES SECTION */
+#services{
+    flex-direction: column;
+}
+.h-primary {
+    font-size: 2.2rem;
+    padding-top: 10px;
+}
+.h-secondary {
+    font-size: 1.6rem;
+    padding: 12px;
+}
+
+#services .box img {
+    margin: auto;
+    padding: 2px;
+    height: 220px;
+}
+#services .box {
+    border-radius: 23px;
+    padding: 11px;
+    margin: 7px;
+}
+/* CLIENTS SECTION */
+#client-section{
+    overflow: hidden;
+}
+#clients {
+    flex-wrap: wrap;
+}
+.clients {
+    padding: 22px;
+}
+.clients img {
+    height: 80px;
+}
+/* CONTACT SECTION */
+#contact-us {
+    position: relative;
+    height: 535px;
+}
+#contact-box {
+    margin: 30px;
+}
+#contact-box label {
+    font-size: 1rem;
+}
+#contact-box input {
+    margin: 20px;
+    width: 100%;
+    font-size: 1rem;
+}
+#message{
+    height:60px;
+}
+.button {
+    padding: 13px 4px;
+    font-size: 1rem;
+}
+#contact-box form {
+    width: 64%;
+}
+#contact-box {
+    margin: 30px 0px;
+}
